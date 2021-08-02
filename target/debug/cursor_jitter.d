@@ -1,1 +1,0 @@
-C:\Users\admin\projects\cursor_jitter\target\debug\cursor_jitter.exe: C:\Users\admin\.cargo\registry\src\github.com-1ecc6299db9ec823\winapi-0.3.9\build.rs C:\Users\admin\projects\cursor_jitter\src\main.rs
