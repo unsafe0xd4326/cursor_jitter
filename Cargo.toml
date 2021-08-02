@@ -1,0 +1,21 @@
+# cargo strip [cargo install --force cargo-strip]
+cargo-features = ["strip"]
+
+[package]
+name = "cursor_jitter"
+version = "0.1.0"
+edition = "2018"
+
+
+[dependencies]
+winapi = { version = "0.3.9", features = ["winuser", "windef"] }
+rand = "0.8.4"
+
+
+# optimization binary size
+[profile.release]
+lto = true
+strip = true
+opt-level = 'z'
+codegen-units = 1
+panic = 'abort'
