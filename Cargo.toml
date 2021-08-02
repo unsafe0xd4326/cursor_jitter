@@ -1,5 +1,5 @@
 # cargo strip [cargo install --force cargo-strip]
-cargo-features = ["strip"]
+# cargo-features = ["strip"]
 
 [package]
 name = "cursor_jitter"
@@ -15,7 +15,7 @@ rand = "0.8.4"
 # optimization binary size
 [profile.release]
 lto = true
-strip = true
+# strip = true
 opt-level = 'z'
 codegen-units = 1
 panic = 'abort'
